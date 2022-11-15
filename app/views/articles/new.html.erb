@@ -1,0 +1,9 @@
+<h2>Create a new article</h2>
+
+<%= form_with model: @article do |t| %>
+  <%= t.label :title %>
+  <%= t.text_field :title %>
+  <%= t.label :content %>
+  <%= t.text_field :content %>
+  <%= t.submit "Save", :class => "btn btn-primary"%>
+<% end %>
